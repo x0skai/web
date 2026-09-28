@@ -68,12 +68,17 @@ zones walked open.
 Progression is device-local, the same way fog reveals
 (`nilx-one.fog.reveals.v1.<owner>`) and the landmark notebook
 (`nilx-one.avaia.landmarks.v1.<owner>`) are. It is kept under
-`nilx-one.progression.v2.<owner>`, one Bond's alone, and it is never synced,
-exported, or sent anywhere. Version 1 (`nilx-one.progression.v1.<owner>`)
-carries over as the Bond's own activity, less the configuration reward it used
-to pay — that is now the account achievement above. A level is not a protocol
-fact: it creates no Interaction, completes no BondChain, and Core and the
-identity service know nothing about it. A new device starts a Bond's activity
+`nilx-one.progression.v2.<owner>`, one Bond's alone. Nothing sends it
+anywhere today; the experience and levels are placed as _synchronizable_ —
+eligible to follow a Bond between its own devices under the `.bnd`
+discipline, never through the service in the clear — while
+`deviceAchievements` and `settingsHintSeen` are this device's alone and stay
+behind (see [State placement](state-placement.md)). Version 1
+(`nilx-one.progression.v1.<owner>`) carries over as the Bond's own activity,
+less the configuration reward it used to pay — that is now the account
+achievement above. A level is not a protocol fact: it creates no Interaction,
+completes no BondChain, and Core and the identity service know nothing about
+it. Until progression travels, a new device starts a Bond's activity
 experience at zero, the same way it starts a new local fog field and a new
 local notebook; account achievements are read again from the service.
 
