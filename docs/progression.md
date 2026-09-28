@@ -69,9 +69,9 @@ Progression is device-local, the same way fog reveals
 (`nilx-one.fog.reveals.v1.<owner>`) and the landmark notebook
 (`nilx-one.avaia.landmarks.v1.<owner>`) are. It is kept under
 `nilx-one.progression.v2.<owner>`, one Bond's alone. Nothing sends it
-anywhere today; the experience and levels are placed as _synchronizable_ —
-eligible to follow a Bond between its own devices under the `.bnd`
-discipline, never through the service in the clear — while
+anywhere today. The experience and levels are transport-eligible — they may
+follow a Bond between its own devices, and that is not synced state and not
+service state — while
 `deviceAchievements` and `settingsHintSeen` are this device's alone and stay
 behind (see [State placement](state-placement.md)). Version 1
 (`nilx-one.progression.v1.<owner>`) carries over as the Bond's own activity,

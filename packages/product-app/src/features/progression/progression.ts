@@ -8,8 +8,9 @@
  * landmark notebook are: what this device kept track of for one Bond, never
  * asserted as a protocol fact. It is not BondChain evidence and it is not
  * identity state — Core and the identity service know nothing about it.
- * Experience and levels are placed as synchronizable (state-placement.ts);
- * `deviceAchievements` and `settingsHintSeen` are this device's alone.
+ * Experience and levels are transport-eligible (state-placement.ts): not
+ * synced state, and not service state. `deviceAchievements` and
+ * `settingsHintSeen` are this device's alone.
  *
  * The Bond and its Avaia level apart. What the owner did themselves pays the
  * Bond; what the Avaia did pays the Avaia. The two curves are deliberately
